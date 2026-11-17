@@ -11,7 +11,7 @@ workflows:
           set -eu
           xcodebuild -project MojeCentrum.xcodeproj -scheme MojeCentrum \
             -configuration Debug -destination 'generic/platform=iOS Simulator' \
-            -derivedData build/DerivedData CODE_SIGNING_ALLOWED=NO build
+            -derivedDataPath build/DerivedData CODE_SIGNING_ALLOWED=NO build
   ios-testflight:
     name: iOS – TestFlight
     instance_type: mac_mini_m2
