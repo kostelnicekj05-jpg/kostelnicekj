@@ -1,0 +1,30 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A00000000000000000000001 = {isa = PBXProject; buildConfigurationList = A0000000000000000000000A; compatibilityVersion = "Xcode 14.0"; developmentRegion = cs; knownRegions = (cs, Base); mainGroup = A00000000000000000000002; productRefGroup = A00000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000004); };
+  A00000000000000000000002 = {isa = PBXGroup; children = (A00000000000000000000005, A00000000000000000000003); sourceTree = "<group>"; };
+  A00000000000000000000003 = {isa = PBXGroup; children = (A00000000000000000000006); name = Products; sourceTree = "<group>"; };
+  A00000000000000000000004 = {isa = PBXNativeTarget; buildConfigurationList = A0000000000000000000000B; buildPhases = (A00000000000000000000007, A00000000000000000000011); buildRules = (); dependencies = (); name = MojeCentrum; productName = MojeCentrum; productReference = A00000000000000000000006; productType = "com.apple.product-type.application"; };
+  A00000000000000000000005 = {isa = PBXGroup; children = (A00000000000000000000008, A0000000000000000000000E, A00000000000000000000012, A00000000000000000000013); path = App; sourceTree = "<group>"; };
+  A00000000000000000000006 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MojeCentrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  A00000000000000000000007 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000009); runOnlyForDeploymentPostprocessing = 0; };
+  A00000000000000000000008 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojeCentrum.swift; sourceTree = "<group>"; };
+  A00000000000000000000009 = {isa = PBXBuildFile; fileRef = A00000000000000000000008; };
+  A0000000000000000000000A = {isa = XCConfigurationList; buildConfigurations = (A0000000000000000000000C, A0000000000000000000000F); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A0000000000000000000000B = {isa = XCConfigurationList; buildConfigurations = (A0000000000000000000000D, A00000000000000000000010); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A0000000000000000000000C = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 5.0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; }; name = Debug; };
+  A0000000000000000000000D = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; INFOPLIST_FILE = App/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = cz.kostelnicek.mojecentrum; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+  A0000000000000000000000E = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+  A0000000000000000000000F = {isa = XCBuildConfiguration; buildSettings = {SDKROOT = iphoneos; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SWIFT_VERSION = 5.0; }; name = Release; };
+  A00000000000000000000010 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; INFOPLIST_FILE = App/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = cz.kostelnicek.mojecentrum; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+  A00000000000000000000011 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000014, A00000000000000000000015); runOnlyForDeploymentPostprocessing = 0; };
+  A00000000000000000000012 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+  A00000000000000000000013 = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+  A00000000000000000000014 = {isa = PBXBuildFile; fileRef = A00000000000000000000012; };
+  A00000000000000000000015 = {isa = PBXBuildFile; fileRef = A00000000000000000000013; };
+ };
+ rootObject = A00000000000000000000001;
+}
