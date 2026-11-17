@@ -37,3 +37,23 @@ workflows:
     publishing:
       app_store_connect:
         auth: integration
+ ios-altstore:
+    name: iOS – IPA pro AltStore
+    instance_type: mac_mini_m2
+    max_build_duration: 20
+    environment:
+      xcode: latest
+    scripts:
+      - name: Sestavení pro iPhone
+        script: |
+          set -eu
+          xcodebuild -project MojeCentrum.xcodeproj -scheme MojeCentrum \
+            -configuration Release -destination 'generic/platform=iOS' \
+            -derivedDataPath build/DerivedData CODE_SIGNING_ALLOWED=NO build
+          mkdir -p build/altstore/Payload
+          cp -R build/DerivedData/Build/Products/Release-iphoneos/MojeCentrum.app \
+            build/altstore/Payload/
+          cd build/altstore
+          zip -qr MojeCentrum.ipa Payload
+    artifacts:
+      - build/altstore/MojeCentrum.ipa
